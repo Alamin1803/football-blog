@@ -1,0 +1,128 @@
+/******** utilities css ****** */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1160px;
+    margin:0 auto;
+}
+
+/* *****nav start  ******/
+header{
+    background-color: #2D25A0;
+    padding-top:15px ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul {
+display: flex;
+
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+nav button{
+    background-color: #E02C6D;
+    padding: 5px 15px;
+    color: #FFF;
+}
+nav button i{
+    color: #FFF;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 0%;
+}
+/* *****nav end ******/
+
+/* *****top banner start  ******/
+.banner-section{
+    background-color: #2D25A0;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+@keyframes moveit {
+    from{
+        margin-left: -600px;
+    }
+    to{
+        margin: 0;
+    }
+    
+}
+.banner-left {
+width: 50%;
+padding-top: 85px ;
+}
+.banner-left h1{
+    color: #FFF;
+    font-size: 64px;
+    line-height: 80px;
+    animation: moveit 2s linear 0s 1 alternate;
+}
+.banner-left a button{
+    color: #FFF;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 5px 15px;
+    margin-top: 60px;
+    animation: moveit 2s linear 0s 1 alternate;
+    
+}
+.banner-left a button i{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.banner-right{
+    width: 50%;
+    padding-top: 20px;
+}
+.banner-right img{
+    width: 100%;
+}
+
+/* *****top banner end ******/
+
+/* ***** card start ******/
+.card-section{
+    padding: 80px 0;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 50px;
+    padding: 10px;
+   
+   
+}
+.card{
+    width: 330px;
+    height: 474px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 2px #e2dbde;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-size: 28px;
+    margin-top: 10px;
+}
+.card p{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+}
