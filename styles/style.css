@@ -93,6 +93,7 @@ padding-top: 85px ;
     width: 100%;
 }
 
+
 /* *****top banner end ******/
 
 /* ***** card start ******/
@@ -126,3 +127,70 @@ padding-top: 85px ;
     text-align: justify;
     margin-top: 10px;
 }
+/****** card section end ******* */
+/****** media query start ******* */
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 688px)  {
+    
+
+  header{
+      display: none;
+  }  
+ .banner{
+     flex-direction: column;
+     padding: 0 10px;
+
+ }
+ .container{
+    width: -1160px;
+ }
+ .banner-left{
+    padding-top: 30px;
+ }
+ .banner-left h1{
+     font-size: 36px;
+     line-height: 50px;
+     padding-top: 1px;
+     margin-bottom: 10px;
+ }
+ .banner-left button{
+    margin-top: -60px;
+ }
+ .banner-right img{
+     width: 329px;
+     height: 260px;
+ }
+ .cards{
+  grid-template-columns: 1fr;
+ }
+
+
+
+ }
+
+
+
+@media (max-width: 991.98px)  and (min-width:688px){
+    header{
+        display: none;
+    }  
+    .cards{
+        grid-template-columns: 1fr 1fr;
+       }
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
+
+
+
+
+/****** Media Query end ******* */
